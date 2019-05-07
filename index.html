@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+       
+</head>
+<body onload="initialise()">
+                          
+   <ul id="joc">
+       <li><label for="optiuni">SELECT YOUR WEAPON</label><br>
+        <select id="optiuni">
+                <option value="rock">ROCK</option>
+                <option value="paper">PAPER</option>
+                <option value="scissors">SCISSORS</option>
+               </select>
+               <input type="button" class="buton" value="PLAY" onclick="getSelectedValue()">  
+               </li>
+             
+    
+        <li id="comp"><Span >Computer:&nbsp&nbsp</span><span id="output1">NONE</span>  <span id="scor1">0</span></li>
+        <li id="hum" ><span >Human: &nbsp&nbsp</span><span id="output2">NONE</span><br><span id="scor2">0</span></li>
+       
+   </ul> 
+   <p id="rezultat" class="result">&nbsp&nbsp</p>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="RPS.js"></script>
+
+</body>
+
+</html>
